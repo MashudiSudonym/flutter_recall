@@ -82,7 +82,10 @@ class _ProductListPageState extends State<ProductListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Product Catalog'), centerTitle: true),
+      appBar: AppBar(
+        title: const Text('Product Catalog 01'),
+        centerTitle: true,
+      ),
       body: FutureBuilder<List<Product>>(
         future: _futureProducts,
         builder: (context, snapshot) {

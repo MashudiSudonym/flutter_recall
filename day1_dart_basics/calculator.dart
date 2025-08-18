@@ -11,28 +11,28 @@ void main() {
   double? num2 = double.tryParse(stdin.readLineSync() ?? '');
 
   if (num1 == null || num2 == null) {
-      print("Invalid number input");
-      return;
-    }
+    print("Invalid number input");
+    return;
+  }
 
-    double result;
-    switch (op) {
-        case '+':
-          result = num1 + num2;
-          break;
-        case '-':
-          result = num1 - num2;
-          break;
-        case '*':
-          result = num1 * num2;
-          break;
-        case '/':
-          result = num1 / num2;
-          break;
-        default:
-          print("Invalid operator");
-          return;
-      }
+  double result;
+  switch (op) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      result = num1 / num2;
+      break;
+    default:
+      print("Invalid operator");
+      return;
+  }
 
   print("Result: $result");
 }
